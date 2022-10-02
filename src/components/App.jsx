@@ -1,16 +1,17 @@
+
+// здесь будет использоваться именной єкспорт. Можно и дефолтній, 
+// но главное чтобі на всем проекте біло одинаково
+
+import {PageTitle} from 'components/PageTitle/PageTitle';
+import { EventBoard } from 'components/EventBoard/EventBoard';
+import upcomingEvents from '../upcoming-events.json';
+
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    return (
+    <div>
+        <PageTitle text="24th Core Worlds Coalition Conference"/>
+        <EventBoard events={upcomingEvents}/>
     </div>
-  );
+    );
 };
