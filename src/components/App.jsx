@@ -7,11 +7,14 @@ import { EventBoard } from 'components/EventBoard/EventBoard';
 import upcomingEvents from '../upcoming-events.json';
 
 
+
 export const App = () => {
     return (
-    <div>
+        // дів забрали - зробили фрагмент, те ж саме, що react.fragment
+        // лишня обгортка не потрібна
+    <>
         <PageTitle text="24th Core Worlds Coalition Conference"/>
         <EventBoard events={upcomingEvents}/>
-    </div>
+    </>
     );
 };
