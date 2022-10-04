@@ -1,12 +1,15 @@
 
 
 import PropTypes from 'prop-types';
-import css from './PageTitle.module.css';
+// import css from './PageTitle.module.css';
+import {Title} from './PageTitle.styled';
 
 
 // обьявляю компонент
+// тег Title підтримує усе що всередині ним обгорнуте
+//  як чілдрени 
 export const PageTitle = ({text}) => {
-    return <h1 className={css.title}>{text}</h1>;
+    return <Title>{text}</Title>;
 };
 
 PageTitle.propTypes = {
